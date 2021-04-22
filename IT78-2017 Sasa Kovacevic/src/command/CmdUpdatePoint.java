@@ -3,7 +3,7 @@ package command;
 import geometry.Point;
 
 public class CmdUpdatePoint implements Command {
-	private Point oldState; //ona je u modelu
+	private Point oldState;
 	private Point newState;
 	private Point originalState = new Point();
 
