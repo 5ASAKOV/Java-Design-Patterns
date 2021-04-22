@@ -12,6 +12,21 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import command.CmdAddShape;
+import command.CmdBringToBack;
+import command.CmdBringToFront;
+import command.CmdDeselectShape;
+import command.CmdRemoveShape;
+import command.CmdSelectShape;
+import command.CmdToBack;
+import command.CmdToFront;
+import command.CmdUpdateCircle;
+import command.CmdUpdateDonut;
+import command.CmdUpdateHexagon;
+import command.CmdUpdateLine;
+import command.CmdUpdatePoint;
+import command.CmdUpdateRectangle;
+import command.Command;
 import dialog.DialogCircle;
 import dialog.DialogDonut;
 import dialog.DialogLine;
@@ -24,12 +39,15 @@ import geometry.Line;
 import geometry.Point;
 import geometry.Rectangle;
 import geometry.Shape;
-import hexagon.Hexagon;
+import hexagon.Hexagon;;
 
 public class DrawingController{
 	private DrawingModel model;
 	private DrawingFrame frame;
 	private Point startPoint;
+	
+	private LinkedList<Command> commandsUndo = new LinkedList<Command>();  
+	private LinkedList<Command> commandsRedo = new LinkedList<Command>();  
 	
 	
 	public DrawingController(DrawingModel model, DrawingFrame frame) {
