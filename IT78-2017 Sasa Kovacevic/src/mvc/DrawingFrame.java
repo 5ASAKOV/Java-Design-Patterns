@@ -273,7 +273,7 @@ public class DrawingFrame extends JFrame{
 		mntmOpenDrawing = new JMenuItem("Open drawing");
 		mntmOpenDrawing.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				controller.openDrawing();
+				//controller.openDrawing();
 			}
 		});
 		mntmOpenDrawing.setFont(new Font("Cambria Math", Font.PLAIN, 16));
@@ -282,7 +282,7 @@ public class DrawingFrame extends JFrame{
 		mntmSaveDrawing = new JMenuItem("Save drawing");
 		mntmSaveDrawing.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				controller.saveDrawing();
+				//controller.saveDrawing();
 			}
 		});
 		mntmSaveDrawing.setFont(new Font("Cambria Math", Font.PLAIN, 16));
@@ -294,7 +294,7 @@ public class DrawingFrame extends JFrame{
 		mntmOpenLog = new JMenuItem("Open log");
 		mntmOpenLog.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				controller.openLog();
+				//controller.openLog();
 			}
 		});
 		mntmOpenLog.setFont(new Font("Cambria Math", Font.PLAIN, 16));
@@ -303,7 +303,7 @@ public class DrawingFrame extends JFrame{
 		mntmSaveLog = new JMenuItem("Save log");
 		mntmSaveLog.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				controller.saveLog();
+				//controller.saveLog();
 			}
 		});
 		mntmSaveLog.setFont(new Font("Cambria Math", Font.PLAIN, 16));
@@ -348,7 +348,7 @@ public class DrawingFrame extends JFrame{
 		btnNext.setEnabled(false);
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				controller.next();
+				//controller.next();
 			}
 		});
 		btnNext.setFont(new Font("Cambria Math", Font.PLAIN, 16));
